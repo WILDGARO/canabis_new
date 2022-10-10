@@ -113,7 +113,7 @@ class _Sing_upState extends State<Sing_up> {
           cursorColor: yellowColor,
           obscureText: isPassword,
           decoration: InputDecoration(
-            hintText: 'USERNAME (2 to 10 characters)',
+            hintText: 'Username (2 to 10 characters)',
             hintStyle: interTextStyle.copyWith(
               color: greyColor,
               fontSize: 14,

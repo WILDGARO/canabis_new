@@ -113,7 +113,7 @@ class _Sing_upState extends State<Sing_up> {
           cursorColor: yellowColor,
           obscureText: isPassword,
           decoration: InputDecoration(
-            hintText: 'USERNAME',
+            hintText: 'USERNAME (2 to 10 characters)',
             hintStyle: interTextStyle.copyWith(
               color: greyColor,
               fontSize: 14,
@@ -133,6 +133,11 @@ class _Sing_upState extends State<Sing_up> {
             ),
             focusColor: yellowColor,
           ),
+          validator: (value){
+            if(value == null || value.isEmpty){
+              return "Please enter your text";
+            }
+          },
         ),
       );
     }

@@ -135,7 +135,7 @@ class _Sing_upState extends State<Sing_up> {
           ),
           validator: (value){
             if(value == null || value.isEmpty){
-              return "Please enter your text.";
+              return "Please enter your text";
             }
           },
         ),
